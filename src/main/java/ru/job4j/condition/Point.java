@@ -13,6 +13,6 @@ public class Point {
         int x2 = 9;
         int y2 = 4;
         double result = Point.distance(x1, y1, x2, y2);
-        System.out.printf("result (%d, %d) to (%d, %d): %f%n", x1, y1, x2, y2, result);
+        System.out.printf("result (%d, %d) to (%d, %d): %f", x1, y1, x2, y2, result);
     }
 }
