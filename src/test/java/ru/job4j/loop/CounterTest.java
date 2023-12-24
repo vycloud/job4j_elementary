@@ -40,4 +40,40 @@ class CounterTest {
         int expected = 0;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenEvenNumbersFrom1To10Then30() {
+        int start = 1;
+        int finish = 10;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 30;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenEvenNumbersFrom3To10Then8() {
+        int start = 3;
+        int finish = 8;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 18;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenEvenNumbersFrom1To1Then0() {
+        int start = 1;
+        int finish = 1;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 0;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenEvenNumbersFromMinus10To8ThenMinus10() {
+        int start = -10;
+        int finish = 8;
+        int result = Counter.sumByEven(start, finish);
+        int expected = -10;
+        assertThat(result).isEqualTo(expected);
+    }
 }
