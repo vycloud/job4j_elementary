@@ -5,7 +5,7 @@ public class Counter {
     public static int sum(int start, int finish) {
         int sum = 0;
         for (int number = start; number <= finish; number++) {
-            sum = sum + number;
+            sum += number;
         }
         return sum;
     }
@@ -14,7 +14,7 @@ public class Counter {
         int sum = 0;
         for (int number = start; number <= finish; number++) {
             if (number % 2 == 0) {
-                sum = sum + number;
+                sum += number;
             }
         }
         return sum;
