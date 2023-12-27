@@ -32,4 +32,11 @@ class CheckTest {
         boolean result = Check.mono(data);
         assertThat(result).isFalse();
     }
+
+    @Test
+    void whenDataWithOneTrue() {
+        boolean[] data = new boolean[] {true};
+        boolean result = Check.mono(data);
+        assertThat(result).isTrue();
+    }
 }
